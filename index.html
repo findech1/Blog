@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tech Blog</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">TechBlog</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#blog" class="nav-link">Blog</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </nav>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Welcome to TechBlog</h1>
+      <p>Insights, tutorials, and news for developers</p>
+      <a href="#blog" class="hero-btn">Read the Blog</a>
+    </div>
+  </header>
+  <main>
+    <!-- Home Section -->
+    <section id="home" class="page-section">
+      <h2>Welcome to TechBlog</h2>
+      <p>
+        <strong>TechBlog</strong> is your go-to source for the latest in software development, programming tutorials, and technology news. Whether you're a beginner or a seasoned developer, you'll find valuable insights, tips, and resources to help you grow your skills and stay ahead in the tech world.
+      </p>
+      <ul>
+        <li>🔥 In-depth tutorials on web and mobile development</li>
+        <li>📰 Curated tech news and trends</li>
+        <li>💡 Productivity hacks for developers</li>
+        <li>🎙️ Interviews with industry experts</li>
+      </ul>
+      <p>
+        Start exploring our blog or learn more <a href="#about" class="nav-link">about us</a>!
+      </p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="page-section" style="display:none;">
+      <h2>About TechBlog</h2>
+      <p>
+        Founded in 2025 by a group of passionate KCAU software engineers, TechBlog aims to make technology accessible and enjoyable for everyone. Our team consists of full-stack developers, UI/UX designers, and tech enthusiasts who love sharing their knowledge.
+      </p>
+      <h3>Our Mission</h3>
+      <p>
+        To empower developers worldwide by providing high-quality, practical, and up-to-date content on programming, tools, and best practices.
+      </p>
+      <h3>Meet the Team</h3>
+      <ul>
+        <li><strong>Felix Ndege.</strong> – Lead Editor & Backend Specialist</li>
+        <li><strong>Kibet Abraham.</strong> – Frontend Developer & Designer</li>
+        <li><strong>kelly Owiti.</strong> – DevOps & Cloud Enthusiast</li>
+        <li><strong>Sharn Usagi.</strong> – Content Writer & Community Manager</li>
+        <li><strong>Wesley Wamalwa.</strong> – Content Writer & Community Manager</li>
+      </ul>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="page-section" style="display:none;">
+      <h2>Latest Blog Posts</h2>
+      <button id="addPostBtn">Add New Post</button>
+      <div id="posts" class="posts"></div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="page-section" style="display:none;">
+      <h2>Contact Us</h2>
+      <p>
+        Have questions, feedback, or want to collaborate? We'd love to hear from you!
+      </p>
+      <ul>
+        <li>Email: <a href="mailto:contact@techblog.com">contact@techblog.com</a></li>
+        <li>Twitter: <a href="https://twitter.com/techblog" target="_blank">@techblog</a></li>
+        <li>GitHub: <a href="https://github.com/techblog" target="_blank">github.com/techblog</a></li>
+      </ul>
+      <form id="contactForm">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <div id="contactSuccess" style="display:none; color:green; margin-top:1rem;">
+        Thank you for reaching out! We'll get back to you soon.
+      </div>
+    </section>
+  </main>
+  <!-- Modal for Add/Edit Post -->
+  <div id="modal" class="modal">
+    <form id="postForm">
+      <input type="text" id="postTitle" placeholder="Title" required />
+      <textarea id="postContent" placeholder="Content" required></textarea>
+      <button type="submit">Save</button>
+      <button type="button" id="closeModal">Cancel</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+  <footer class="footer">
+    &copy; 2025 TechBlog. All rights reserved.
+  </footer>
+</body>
+</html>
