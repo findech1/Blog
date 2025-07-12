@@ -78,19 +78,19 @@ function injectDummyPosts() {
   if (posts.length === 0) {
     const dummy = [
       {
-        title: "Getting Started with React in 2024",
+        title: "Getting Started with React in 2025",
         content: "React remains one of the most popular JavaScript libraries for building user interfaces. In this guide, we'll cover the basics of setting up a React project, component structure, and state management.",
-        date: "2024-06-01"
+        date: "2025-07-01"
       },
       {
         title: "Top 5 VS Code Extensions for Productivity",
         content: "Boost your coding efficiency with these must-have VS Code extensions: Prettier, ESLint, GitLens, Live Server, and Bracket Pair Colorizer.",
-        date: "2024-05-28"
+        date: "2025-06-28"
       },
       {
         title: "Understanding Docker for Beginners",
         content: "Docker simplifies application deployment by using containers. Learn how to create your first Docker container and understand the basics of Dockerfiles.",
-        date: "2024-05-20"
+        date: "2025-06-29"
       }
     ];
     savePosts(dummy);
